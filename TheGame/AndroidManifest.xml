@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mckenna.thegame"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+
+    <permission 
+        android:name="com.mckenna.thegame.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature"/>
+    
+    <uses-permission android:name="com.mckenna.thegame.permission.MAPS_RECEIVE"/>
+    
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission android:name="android.permission.READ_CONTACTS" />
+    
+	<uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
+	
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+   
+        <activity
+            android:name="com.mckenna.thegame.SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+         <activity
+            android:name="com.mckenna.thegame.FirstTimeActivity"
+            android:label="@string/app_name" 
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="com.mckenna.thegame.FIRSTTIME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.mckenna.thegame.MainActivity"
+            android:label="@string/app_name" > <!-- android:theme="@style/Theme.AppCompat" -->
+            <intent-filter>
+                <action android:name="com.mckenna.thegame.MAINACTIVITY" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.mckenna.thegame.GameActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.mckenna.thegame.GAME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+         <activity
+            android:name="com.mckenna.thegame.NewGameActivity"
+            android:label="@string/app_name" 
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="com.mckenna.thegame.NEWGAME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+         <activity
+            android:name="com.mckenna.thegame.AddPoisActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.mckenna.thegame.ADDPOIS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity
+            android:name="com.mckenna.thegame.PickPlayersActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.mckenna.thegame.PICKPLAYERS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+                 
+         <activity
+            android:name="com.mckenna.thegame.ViewPlayersActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.mckenna.thegame.VIEWPLAYERS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+     
+         <activity
+            android:name="com.mckenna.thegame.JoinGameActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.mckenna.thegame.JoinGame" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity
+            android:name="com.mckenna.thegame.MyLocationMapFragmentActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.mckenna.thegame.MyLocationMapFragmentActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+ 
+         <activity 
+            android:theme="@android:style/Theme.Holo.Light.Dialog.MinWidth"
+            android:name="com.mckenna.thegame.MyDialog"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.mckenna.thegame.DIALOG" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+             
+        <service android:name="BackgroundService"></service>
+         
+		<meta-data
+			android:name="com.google.android.gms.version"
+			android:value="@integer/google_play_services_version" />
+        
+        <meta-data
+    		android:name="com.google.android.maps.v2.API_KEY"
+    		android:value="AIzaSyDmigm1DEU3z8AGjbiwvelFsiwKvJzEAcc"/>
+
+    </application>
+
+</manifest>

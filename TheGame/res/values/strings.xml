@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TheGame</string>
+    <string name="action_settings">Settings</string>
+    <string name="new_game_title">New Game</string>
+    <string name="new_game_name">Name</string>
+    <string name="new_game_name_hint">Name of the game</string>
+    <string name="new_game_location">Location</string>
+    <string name="new_game_location_hint">Where is this game?</string>
+    <string name="new_game_invite">Invite only?</string>
+    <string name="new_game_public">Public</string>  
+    <string name="new_game_by_invite">By invite</string>   
+    <string name="new_game_just_me">Just me</string>   
+    <string name="new_game_create">Create Game!</string>   
+    <string name="new_game_details">Fine Details</string>  
+    <string name="welcome">Welcome to The Game</string> 
+    <string name="add_pois_literal">Add targets to the game</string> 
+    <string name="add_pois_literal">Add targets to the game</string> 
+    <string name="b_add_pois">Add Targets</string> 
+    <string name="b_add_players">Add Players</string> 
+    <string name="b_poi_add_from_stored">Existing</string> 
+    <string name="b_poi_add_from_map">From Map</string> 
+    <string name="button_cancel">Cancel</string> 
+    <string name="button_save">Save</string> 
+    <string name="button_create">Create</string> 
+    <string name="button_leave_game">Quit Current Game</string>
+    <string name="existing_pois_literal">Existing POIs</string> 
+    <string name="existing_pois_choose_literal">Choose a POI</string> 
+    <string name="action_play">Play</string>
+    <string name="action_stop">Stop</string>
+    <string name="b_join_game">Join Game</string>
+    <string name="b_new_game">New Game</string>
+    <string name="first_time_literal">Please enter an email address your friends can find you by</string>
+    <string name="first_time_name">What name would you like people to see you as?</string>
+    <string name="first_time_bad_email">I must insist on a valid email address</string>
+    <string name="first_time_bad_name">You really do need a name</string>
+    <string name="first_time_button">Lets go!</string>
+    <string name="reenter_properties">Change Identity</string>
+    
+    
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="fill_horizontal" >
+
+
+        <TextView
+            android:id="@+id/literal_add_pois"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="10dp"
+            android:text="@string/add_pois_literal" />
+
+	    <fragment
+	        android:id="@+id/fragment_map"
+	        android:layout_below="@+id/literal_add_pois"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:name="com.google.android.gms.maps.MapFragment"/>
+
+        <Button
+            android:id="@+id/button_cancel"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/fragment_map"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/button_leave_game"
+            android:onClick="onClick_ButtonCancel"
+            android:text="@string/button_cancel" />
+
+        <Button
+            android:id="@+id/button_leave_game"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/fragment_map"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:onClick="onClick_ButtonSave"
+            android:text="@string/button_save" />
+
+</RelativeLayout>
+
+
